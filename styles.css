@@ -67,7 +67,7 @@ body{
 
 /* NAV */
 .main-nav{display:block}
-.nav-list{display:flex;gap:18px;list-style:none;align-items:center}
+.nav-list{display:flex;gap:18px;list-style-type:none;align-items:center}
 .nav-link{
   color:var(--muted);
   text-decoration:none;
@@ -113,6 +113,7 @@ body{
 .hero-links{display:flex;gap:14px;justify-content:center;margin-top:10px}
 .hero-links a{color:var(--muted);text-decoration:none;font-weight:600}
 .hero-links a:hover{color:var(--text)}
+.hero-links li{margin: 20px;}
 
 /* SECTIONS */
 .section{padding:64px 0}
