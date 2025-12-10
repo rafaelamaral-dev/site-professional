@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rafael Fróz — Web Developer</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <!-- Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+
+  <!-- Header -->
+  <header class="site-header container">
+    <div class="brand">
+      <span class="brand-name">Rafael Fróz</span>
+      <span class="brand-dot">.</span>
+    </div>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="lang-btn" class="icon-btn" title="Switch language">EN</button>
+      <button id="theme-btn" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <button id="hamburger" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav (overlay) -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO / HOME -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hi — I’m <span>Rafael Fróz</span></h1>
+        <p class="hero-sub">Civil Engineer turned Web Developer. Focused on delivering clean, reliable web experiences using HTML, CSS and JavaScript.</p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <ul class="hero-links">
+          <li><a href="https://github.com/rafaelamaral-dev" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/rafaelfrozdev" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p><strong>Background:</strong> Civil Engineer with postgrad in Project Management (PMI) and MBA in Business Management. Transitioning into development to combine engineering thinking with software.</p>
+
+          <p><strong>Focus:</strong> Front-end development, building small products and automations that solve real problems. Comfortable with JavaScript, DOM, APIs and Git.</p>
+        </div>
+
+        <div class="about-meta">
+          <dl>
+            <dt>Location</dt><dd>Brazil</dd>
+            <dt>Availability</dt><dd>Freelance / Remote</dd>
+            <dt>Contact</dt><dd><a href="mailto:seuemail@example.com">seuemail@example.com</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-pill">HTML5</div>
+        <div class="skill-pill">CSS3</div>
+        <div class="skill-pill">JavaScript (ES6+)</div>
+        <div class="skill-pill">Fetch / APIs</div>
+        <div class="skill-pill">Git & GitHub</div>
+        <div class="skill-pill">Responsive Design</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- card: app-filmes -->
+        <article class="project-card">
+          <img src="assets/app-filmes-preview.png" alt="App Filmes preview" class="project-thumb">
+          <div class="project-body">
+            <h3 class="project-title">Movie Search (TMDB)</h3>
+            <p class="project-desc">Search movies using TMDB API, async/await, robust error handling and responsive UI.</p>
+            <div class="project-actions">
+              <a class="link-btn" href="https://rafaelamaral-dev.github.io/app-filmes/" target="_blank" rel="noopener">Live</a>
+              <a class="link-btn" href="https://github.com/rafaelamaral-dev/app-filmes" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card: pokemon -->
+        <article class="project-card">
+          <img src="assets/projeto-buscar-pokemon.png" alt="Buscar Pokémon preview" class="project-thumb">
+          <div class="project-body">
+            <h3 class="project-title">Pokémon Finder</h3>
+            <p class="project-desc">Single-page app using PokéAPI. Search by name and display stats and sprite.</p>
+            <div class="project-actions">
+              <a class="link-btn" href="https://rafaelamaral-dev.github.io/projeto-buscar-pokemon/" target="_blank" rel="noopener">Live</a>
+              <a class="link-btn" href="https://github.com/rafaelamaral-dev/projeto-buscar-pokemon" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card: quiz -->
+        <article class="project-card">
+          <img src="assets/quiz-interativo-preview.png" alt="Quiz preview" class="project-thumb">
+          <div class="project-body">
+            <h3 class="project-title">Interactive Quiz</h3>
+            <p class="project-desc">Quiz powered by OpenTDB API with scoring, randomized answers and responsive UI.</p>
+            <div class="project-actions">
+              <a class="link-btn" href="https://rafaelamaral-dev.github.io/quiz-interativo/" target="_blank" rel="noopener">Live</a>
+              <a class="link-btn" href="https://github.com/rafaelamaral-dev/quiz-interativo" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card: to-do -->
+        <article class="project-card">
+          <img src="assets/to-do-list-preview.png" alt="To-Do List preview" class="project-thumb">
+          <div class="project-body">
+            <h3 class="project-title">To-Do List</h3>
+            <p class="project-desc">Task manager with create/delete and localStorage support — simple and practical.</p>
+            <div class="project-actions">
+              <a class="link-btn" href="https://rafaelamaral-dev.github.io/to-do-list/" target="_blank" rel="noopener">Live</a>
+              <a class="link-btn" href="https://github.com/rafaelamaral-dev/to-do-list" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p>I’m available for freelance projects or full-time roles. I respond fast and I’m open to remote opportunities.</p>
+          <a class="btn btn-primary" href="mailto:seuemail@example.com">Email me</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Profiles</h3>
+          <ul class="profile-list">
+            <li><a href="https://github.com/rafaelamaral-dev" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rafaelfrozdev" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rafael Fróz — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
