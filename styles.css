@@ -113,7 +113,7 @@ body{
 .hero-links{display:flex;gap:14px;justify-content:center;margin-top:10px}
 .hero-links a{color:var(--muted);text-decoration:none;font-weight:600}
 .hero-links a:hover{color:var(--text)}
-.hero-links li{margin: 20px;}
+.hero-links li{margin: 10px}
 
 /* SECTIONS */
 .section{padding:64px 0}
