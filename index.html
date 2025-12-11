@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rafael Fróz — Web Developer</title>
+  <meta name="description" content="Portfolio of Rafael Fróz, Civil Engineer turned Web Developer specialized in HTML, CSS, and JavaScript. Available for freelance."/>
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <!-- Font (Inter) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body data-theme="dark">
 
-  <!-- Header -->
   <header class="site-header container">
     <div class="brand">
       <span class="brand-name">Rafael Fróz</span>
@@ -30,16 +29,13 @@
     </nav>
 
     <div class="header-controls">
-      <!--O trecho abaixo foi comentado para ocultar o botão de tradução. Ele não funciona ainda, mas no futuro, quando for necessário, ele pode ser reabilitado e será feito código no JS.-->
-      <!--<button id="lang-btn" class="icon-btn" title="Switch language">EN</button>-->
       <button id="theme-btn" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-      <button id="hamburger" class="hamburger" aria-label="Open menu">
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- Mobile nav (overlay) -->
   <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
     <ul>
       <li><a href="#home" class="mobile-link">Home</a></li>
@@ -50,11 +46,10 @@
     </ul>
   </div>
 
-  <!-- HERO / HOME -->
   <main>
     <section id="home" class="hero container">
       <div class="hero-inner">
-        <h1 class="hero-title">Hi — I’m <span>Rafael Fróz</span></h1>
+        <h1 class="hero-title">Hi — I'm <span>Rafael Fróz</span></h1>
         <p class="hero-sub">Civil Engineer turned Web Developer. Focused on delivering clean, reliable web experiences using HTML, CSS and JavaScript.</p>
 
         <div class="hero-ctas">
@@ -69,7 +64,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section container">
       <h2 class="section-title">About</h2>
 
@@ -90,28 +84,25 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section container">
       <h2 class="section-title">Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skill-pill">HTML5</div>
-        <div class="skill-pill">CSS3</div>
-        <div class="skill-pill">JavaScript (ES6+)</div>
-        <div class="skill-pill">Fetch / APIs</div>
-        <div class="skill-pill">Git & GitHub</div>
-        <div class="skill-pill">Responsive Design</div>
-      </div>
+      <ul class="skills-grid">
+        <li class="skill-pill">HTML5</li>
+        <li class="skill-pill">CSS3</li>
+        <li class="skill-pill">JavaScript (ES6+)</li>
+        <li class="skill-pill">Fetch / APIs</li>
+        <li class="skill-pill">Git & GitHub</li>
+        <li class="skill-pill">Responsive Design</li>
+      </ul>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section container">
       <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
-        <!-- card: app-filmes -->
         <article class="project-card">
-          <img src="assets/app-filmes-preview.png" alt="App Filmes preview" class="project-thumb">
+          <img src="assets/app-filmes-preview.png" alt="App Filmes preview" class="project-thumb" loading="lazy">
           <div class="project-body">
             <h3 class="project-title">Movie Search (TMDB)</h3>
             <p class="project-desc">Search movies using TMDB API, async/await, robust error handling and responsive UI.</p>
@@ -122,9 +113,8 @@
           </div>
         </article>
 
-        <!-- card: pokemon -->
         <article class="project-card">
-          <img src="assets/projeto-buscar-pokemon.png" alt="Buscar Pokémon preview" class="project-thumb">
+          <img src="assets/projeto-buscar-pokemon.png" alt="Buscar Pokémon preview" class="project-thumb" loading="lazy">
           <div class="project-body">
             <h3 class="project-title">Pokémon Finder</h3>
             <p class="project-desc">Single-page app using PokéAPI. Search by name and display stats and sprite.</p>
@@ -135,9 +125,8 @@
           </div>
         </article>
 
-        <!-- card: quiz -->
         <article class="project-card">
-          <img src="assets/quiz-interativo-preview.png" alt="Quiz preview" class="project-thumb">
+          <img src="assets/quiz-interativo-preview.png" alt="Quiz preview" class="project-thumb" loading="lazy">
           <div class="project-body">
             <h3 class="project-title">Interactive Quiz</h3>
             <p class="project-desc">Quiz powered by OpenTDB API with scoring, randomized answers and responsive UI.</p>
@@ -148,9 +137,8 @@
           </div>
         </article>
 
-        <!-- card: to-do -->
         <article class="project-card">
-          <img src="assets/to-do-list-preview.png" alt="To-Do List preview" class="project-thumb">
+          <img src="assets/to-do-list-preview.png" alt="To-Do List preview" class="project-thumb" loading="lazy">
           <div class="project-body">
             <h3 class="project-title">To-Do List</h3>
             <p class="project-desc">Task manager with create/delete and localStorage support — simple and practical.</p>
@@ -163,22 +151,24 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section container">
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-grid">
         <div class="contact-card">
           <h3>Get in touch</h3>
-          <p>I’m available for freelance projects or full-time roles. I respond fast and I’m open to remote opportunities.</p>
-          <a class="btn btn-primary" href="mailto:zorf310@gmail.com">Email me</a>
+          <p>I'm available for freelance projects or full-time roles. I respond fast and I'm open to remote opportunities.</p>
+          <div class="contact-buttons">
+            <a class="btn btn-primary" href="mailto:zorf310@gmail.com">Email me</a>
+            <a class="btn btn-ghost" href="https://wa.me/5511959749858" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
         </div>
 
         <div class="contact-card">
           <h3>Profiles</h3>
           <ul class="profile-list">
-            <li><a href="https://github.com/rafaelamaral-dev" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/rafaelfrozdev" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/rafaelamaral-dev" target="_blank" rel="noopener"><i class="icon-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rafaelfrozdev" target="_blank" rel="noopener"><i class="icon-linkedin"></i> LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -190,8 +180,11 @@
       <p>© 2025 Rafael Fróz — All rights reserved</p>
     </div>
   </footer>
+  
+  <a href="https://wa.me/5511959749858" id="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Fale comigo no WhatsApp">
+    <i class="icon-whatsapp"></i>
+  </a>
 
   <script src="script.js"></script>
-
 </body>
 </html>
