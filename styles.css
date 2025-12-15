@@ -30,6 +30,10 @@
   padding: 0;
 }
 
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 12px);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
@@ -582,6 +586,13 @@ body {
 
 /* Tablet Portrait */
 @media (max-width: 768px) {
+  @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: calc(var(--header-height) + 20px);
+  }
+}
+
+  
   .main-nav {
     display: none;
   }
