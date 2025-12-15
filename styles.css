@@ -585,6 +585,10 @@ body {
   .main-nav {
     display: none;
   }
+
+  .site-header {
+    height: 15px;
+  }
   
   .hamburger {
     display: flex;
