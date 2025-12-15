@@ -166,9 +166,6 @@ body {
   display: none;
   background: linear-gradient(180deg, rgba(10, 10, 10, 0.98), rgba(10, 10, 10, 0.96));
   padding-top: 100px;
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.3s, transform 0.3s;
 }
 
 [data-theme="light"] .mobile-nav {
@@ -178,8 +175,6 @@ body {
 .mobile-nav.show {
   display: flex;
   flex-direction: column;
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .mobile-nav ul {
@@ -529,35 +524,26 @@ body {
 /* WhatsApp Button com SVG */
 #whatsapp-float {
   position: fixed;
-  right: 20px;
   bottom: 20px;
-  z-index: 1500;
-  background: var(--whatsapp-color);
-  color: white;
+  right: 20px;
+  z-index: 9999;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  background-color: #25d366; /* WhatsApp green */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s;
 }
-
 #whatsapp-float:hover {
-  transform: scale(1.1) translateY(-5px);
+  transform: scale(1.05);
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
 }
-
-#whatsapp-float .whatsapp-icon {
-  width: 28px;
-  height: 28px;
-  transition: transform 0.3s;
-}
-
-#whatsapp-float:hover .whatsapp-icon {
-  transform: scale(1.1);
+#whatsapp-float img {
+  width: 35px;
+  height: auto;
 }
 
 .sr-only {
